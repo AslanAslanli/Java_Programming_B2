@@ -44,6 +44,7 @@ public class ArmyQualify {
             else {
                 message += "Your age must be between 18 to 35 years old";}
 
+
         } else {
             message = "You must be a citizen or resident";
         }
@@ -51,3 +52,4 @@ public class ArmyQualify {
         System.out.println(message);
     }
 }
+
