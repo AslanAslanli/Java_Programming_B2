@@ -59,4 +59,39 @@ public class ArrayUtil {
         }
         return false;
     }
+    public static int indexOf (int[] arr, int num) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num)
+                return i;
+        }
+        return -1;
+    }
+    public static String allIndexesOf (int[] arr, int num) {
+        String str = "";
+        boolean hasNum = false;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num) {
+                str += i + " ";
+                hasNum = true;
+            }
+        }
+        return hasNum? str : "-1";
+    }
+    public static int indexOf (String[] str, String word) {
+        for (int i = 0; i < str.length; i++) {
+            if (str[i].equals(word))
+                return i;
+        }
+        return -1;
+    }
+
+    public static int[] addElementsInArray (int[] arr, int ... nums ) {
+        int[] addedArr = Arrays.copyOf(arr, arr.length+nums.length);
+        int j = 0;
+        for (int i = arr.length; i < addedArr.length; i++) {
+            addedArr [i] = nums[j];
+            j++;
+        }
+        return addedArr;
+    }
 }
