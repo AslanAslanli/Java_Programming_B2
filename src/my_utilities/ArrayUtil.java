@@ -1,5 +1,6 @@
 package my_utilities;
 
+
 import java.util.Arrays;
 
 public class ArrayUtil {
@@ -94,4 +95,5 @@ public class ArrayUtil {
         }
         return addedArr;
     }
+
 }

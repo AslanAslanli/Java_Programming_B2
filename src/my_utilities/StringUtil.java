@@ -1,5 +1,6 @@
 package my_utilities;
 
+
 import java.util.Scanner;
 
 public class StringUtil {
@@ -73,4 +74,5 @@ public class StringUtil {
 
         return true;
     }
+
 }
