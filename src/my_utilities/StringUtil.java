@@ -70,6 +70,16 @@ public class StringUtil {
         return dupChars;
     }
 
+    public static String reverse(String str) {
+        String str1 = "";
+
+        for (int j = str.length()-1; j >= 0; j--) {
+            str1 += str.charAt(j);
+        }
+
+        return str1;
+    }
+
     public static boolean isPalindrome(String word) {
 
         return true;
