@@ -9,11 +9,11 @@ public class AccessingPackage {
         AccessModifier obj = new AccessModifier();
         System.out.println(obj.a); // Can Access
         System.out.println(obj.b); // Can Access
-        System.out.println(obj.c); // Can Not Access
+        //System.out.println(obj.c); // Can Not Access
 
         System.out.println(AccessModifier.x); // Can Access
         System.out.println(AccessModifier.y); // Can Access
-        System.out.println(AccessModifier.z); // Can Not Access
+        //System.out.println(AccessModifier.z); // Can Not Access
 
     /**
     *   c and z are not accessible from another class as they are private
