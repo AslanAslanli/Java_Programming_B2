@@ -9,10 +9,10 @@ public class FirstTry {
             String word = "java";
             System.out.println(word.charAt(4));
         } catch (Exception e){
-            System.out.println("Exception happened. check later");
+            System.err.println("Exception happened. check later");
+            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
-
-
 
         System.out.println("Last Line");
     }
