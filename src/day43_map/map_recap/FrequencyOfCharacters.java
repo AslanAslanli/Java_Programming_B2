@@ -9,8 +9,7 @@ public class FrequencyOfCharacters {
 
         String word = "apple";
         char[] arr = word.toCharArray();
-        ArrayList<Character> list = new ArrayList<>(Arrays.asList(arr));
-
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(word.split("")));
         //ArrayList<String> list = new ArrayList<>(Arrays.asList(word.split("")));
 
         for (String each : list) {
